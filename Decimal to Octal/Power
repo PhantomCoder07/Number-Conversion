@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    int i,num,d,sum=0;
+    printf ("Enter the Decimal: ");
+    scanf ("%d",&num);
+    for (i=0; num>0; i++)
+    {
+        d=num%8;
+        sum=sum+(pow(10,i)*d);
+        num/=8;
+    }
+    printf ("The Octal: %d\n",sum);
+    return 0;
+}
