@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+    long long int num;
+    printf ("Enter the Binary number: ");
+    scanf ("%lld",&num);
+    int d,sum=0,i=1;
+    while (num>0)
+    {
+        d=num%10;
+        sum+=(d*i);
+        i*=2;
+        num/=10;
+    }
+    printf("The Hexadecimal number is: %X\n",sum);
+    return 0;
+}
