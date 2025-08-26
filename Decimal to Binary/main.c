@@ -12,7 +12,7 @@ int main()
         i*=10;
         num/=2;
     }
-    printf ("The binary: %d",sum);
+    printf ("The Binary: %d",sum);
     return 0;
 }
 // for loop
@@ -28,7 +28,7 @@ int main()
         sum+=d*i;
         num/=2;
     }
-    printf ("The binary: %d",sum);
+    printf ("The Binary: %d",sum);
     return 0;
 }
 // Using array
@@ -45,7 +45,7 @@ int main()
         arr[i]=d;
         num=num/2;
     }
-    printf ("The binary: ");
+    printf ("The Binary: ");
     for (j=i-1;j>=0;j--)
     {
         printf ("%d",arr[j]);
@@ -66,7 +66,7 @@ int main()
         sum=sum+(pow(10,i)*d);
         num/=2;
     }
-    printf ("The binary: %d",sum);
+    printf ("The Binary: %d",sum);
     return 0;
 }
 // Function
@@ -88,6 +88,6 @@ int main()
     int num;
     printf ("Enter the Decimal: ");
     scanf ("%d",&num);
-    printf ("The binary: %d",binary(num));
+    printf ("The Binary: %d",binary(num));
     return 0;
 }
