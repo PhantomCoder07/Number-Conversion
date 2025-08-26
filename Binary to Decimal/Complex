@@ -2,9 +2,9 @@
 #include <math.h>
 int main()
 {
-    int num;
+    long long int num;
     printf ("Enter the number: ");
-    scanf ("%d",&num);
+    scanf ("%lld",&num);
     int sum=0,c=0,f=0;
     int n=num;
     while (n>0)
