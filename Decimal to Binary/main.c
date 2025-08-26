@@ -69,3 +69,25 @@ int main()
     printf ("The binary: %d",sum);
     return 0;
 }
+// Function
+#include <stdio.h>
+int binary(int n)
+{
+    int d,sum=0,i=1;
+    while (n>0)
+    {
+        d=n%2;
+        sum+=d*i;
+        i*=10;
+        n/=2;
+    }
+    return sum;
+}
+int main()
+{
+    int num;
+    printf ("Enter the Decimal: ");
+    scanf ("%d",&num);
+    printf ("The binary: %d",binary(num));
+    return 0;
+}
